@@ -39,3 +39,22 @@ void setup() {
     Serial.println("DHT11 Temperature and Humidity Monitoring System Initialized");
     Serial.println("Reading environmental data...");
 }
+
+void loop() {
+
+    // TODO 7:
+    // Read humidity value from sensor
+    float humidity = dht.readHumidity();
+
+    // TODO 8:
+    // Read temperature value from sensor (Celsius)
+    float temperature = dht.readTemperature();
+
+    // TODO 9:
+    // Check if either reading failed using isnan()
+    // If failed, print error message and return
+    if (isnan(humidity) || isnan(temperature)) {
+        Serial.println("Error: Failed to read from DHT11 sensor!");
+        return;
+    }
+
