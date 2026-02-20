@@ -23,3 +23,19 @@
 // TODO 3:
 // Create a DHT object using the defined pin and sensor type
 DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+
+    // TODO 4:
+    // Initialize Serial communication (9600 baud rate)
+    Serial.begin(9600);
+
+    // TODO 5:
+    // Initialize the DHT sensor
+    dht.begin();
+
+    // TODO 6:
+    // Print a system initialization message
+    Serial.println("DHT11 Temperature and Humidity Monitoring System Initialized");
+    Serial.println("Reading environmental data...");
+}
