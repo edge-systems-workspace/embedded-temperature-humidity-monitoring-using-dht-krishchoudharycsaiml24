@@ -3,7 +3,7 @@
 /**
  * @file main.ino
  * @brief Embedded Temperature and Humidity Monitoring using DHT11
- * @author YOUR_NAME
+ * @author Krish_choudhary
  * @date 2026-02-20
  *
  * @details
